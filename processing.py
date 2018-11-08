@@ -1,3 +1,4 @@
+import random
 stars = []
 counter = 0
 
@@ -15,7 +16,7 @@ def draw():
     
     if counter == 60:
         counter = 0
-        y = random(0,480)
+        y = random.randint(0,480)
         stars.append([-5,y])
         
     for i in range(len(stars)):
