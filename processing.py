@@ -19,15 +19,13 @@ def draw():
         y = random.randint(0,480)
         stars.append([-5,y])
     
-    i = 0
-    while i < len(stars):
+
+    for i in range(len(stars)):
         ellipse(stars[i][0], stars[i][1], 5, 5)
         stars[i][0] += 0.5
-        i += 1
 
     i = 0 
     while i < len(stars):
         if [i][0] > 640:
             stars.remove(i)
         i += 1
-
